@@ -53,6 +53,7 @@ Java 16:
 - Stream.toList
 - operacje na wektorach (IntVector.fromArray) - szybsze operacje (incubating - czyli api będzie się zmieniać w kolejnych wersjach)
 - pattern matching producton ready
+- lokalne rekordy, interfejsy i enumy w metodach, ale bez dostępu do zmiennych metody -> raczej nie polecam, może zmniejszyć czytelność
 
 Java 17 (LTS):
 - (demo) random number generator stream ready
