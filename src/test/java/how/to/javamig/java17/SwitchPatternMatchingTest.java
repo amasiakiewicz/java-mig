@@ -51,8 +51,8 @@ class SwitchPatternMatchingTest {
 
     String checkShape(Shape shape) {
         return switch (shape) {
-            case Triangle t && (t.getNumberOfSides() != 3) -> "This is a weird triangle";
-            case Circle c && (c.getNumberOfSides() != 0) -> "This is a weird circle";
+            case Triangle t when t.getNumberOfSides() != 3 -> "This is a weird triangle"; //when from JDK 19
+            case Circle c when c.getNumberOfSides() != 0 -> "This is a weird circle";
             default -> "Just a normal shape";
         };
     }

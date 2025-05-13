@@ -11,12 +11,12 @@ class FormatNumberTest {
     @Test
     public void givenNumber_thenCompactValues() {
         final NumberFormat likesShort =
-                NumberFormat.getCompactNumberInstance(new Locale("en", "US"), NumberFormat.Style.SHORT);
+                NumberFormat.getCompactNumberInstance(Locale.of("en", "US"), NumberFormat.Style.SHORT);
         likesShort.setMaximumFractionDigits(2);
         assertEquals("2.59K", likesShort.format(2592));
 
         final NumberFormat likesLong =
-                NumberFormat.getCompactNumberInstance(new Locale("en", "US"), NumberFormat.Style.LONG);
+                NumberFormat.getCompactNumberInstance(Locale.of("en", "US"), NumberFormat.Style.LONG);
         likesLong.setMaximumFractionDigits(2);
         assertEquals("2.59 thousand", likesLong.format(2592));
     }

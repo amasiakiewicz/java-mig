@@ -1,7 +1,7 @@
 package how.to.javamig.java15;
 
 public abstract sealed class Person
-        permits Person.Employee, Person.Manager { //klasy tu muszą być sealed, non-sealed, final
+        permits Person.Employee, Person.Manager { //classes here must be sealed, non-sealed, final
 
     //...
 

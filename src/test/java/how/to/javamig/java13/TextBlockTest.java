@@ -13,7 +13,7 @@ class TextBlockTest {
                 }
                 """;
 
-        final String formattedJson = json.formatted("Arek"); //podobnie jak format dla zwykłych stringów, tyle że dla text block
+        final String formattedJson = json.formatted("Arek"); //similarly to string format, but here fo text blocks
         System.out.println(formattedJson);
 
     }

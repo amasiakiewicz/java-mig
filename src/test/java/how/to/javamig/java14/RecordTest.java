@@ -14,14 +14,14 @@ class RecordTest {
     }
 
     @Value
-    @Getter(AccessLevel.NONE) //record tego nie potrafi, choć nie żeby to było jakoś potrzebne 
-    public static class ColorValueObject extends AwesomeClass {  //nie potrafi też robić extenda
+    @Getter(AccessLevel.NONE) //record can't do that 
+    public static class ColorValueObject extends AwesomeClass {  //no extends for record
         int red;
         int green;
         int blue;
 
-        public static ColorValueObject create() {  // record też tego nie potrafi, ma tylko konstruktor, więc jest mało elastyczny
-            //dodatkowa logika ...
+        public static ColorValueObject create() {  // no static factory methods in records as well
+            //additional logic...
             return new ColorValueObject(3, 4, 5);
         }
 

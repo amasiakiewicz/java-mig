@@ -7,7 +7,7 @@ class RandomNumberTest {
 
     @Test
     void getPsuedoRandomInts() {
-        RandomGeneratorFactory.of("L128X1024MixRandom") //ew getDefault
+        RandomGeneratorFactory.of("L128X1024MixRandom") //or getDefault
                 .create()
                 .ints(12, 0, 100)
                 .forEach(System.out::println);

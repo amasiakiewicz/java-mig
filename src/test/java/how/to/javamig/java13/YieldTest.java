@@ -13,7 +13,7 @@ class YieldTest {
         final int result = switch (operation) {
             case "doubleMe" -> {
                 //....
-                yield me * 2; //to taki return z case'a z nawiasem
+                yield me * 2; //this returns value from brackets
             }
             case "squareMe" -> {
                 yield me * me;

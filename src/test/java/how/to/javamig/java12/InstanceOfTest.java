@@ -17,7 +17,7 @@ class InstanceOfTest {
     void instanceOfNew() {
         final Object obj = "Hello World!";
         if (obj instanceof String s) {
-            final int length = s.length(); //nie ma type castowania
+            final int length = s.length(); //no type casting
         }
 
     }

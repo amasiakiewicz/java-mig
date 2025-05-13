@@ -23,14 +23,14 @@ class SwitchExpressionTest {
                 typeOfDay = "Day Off";
         }
 
-        typeOfDay = switch (dayOfWeek) {  //od razu można zrobić przypisanie
-            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> "Working Day";  //nie ma potrzeby używania break'ów
+        typeOfDay = switch (dayOfWeek) {  //switch returns value, which we can assign
+            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> "Working Day";  //no need for 'break'
             case SATURDAY, SUNDAY -> "Day Off";
         };
 
         switch (dayOfWeek) {
-            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> System.out.println("Working Day");  //nie musi nic zwracać
-            case SATURDAY, SUNDAY -> {  //bardziej skomplikowana logika w nawiasach
+            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY -> System.out.println("Working Day");  //don't need to return anything
+            case SATURDAY, SUNDAY -> {  //more complex logic in brackets
                 System.out.println("Day Off");
             }
         }
