@@ -91,6 +91,7 @@ Java 20:
 
 \
 Java 21:
+- virtual threads in prod
 - record patterns in prod
 - pattern matching in prod -> added 'null' case
 - string template processors -> STR."Welcome to \{name}"; we have STR, FMT and RAW processors
